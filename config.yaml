@@ -1,0 +1,21 @@
+windows:
+  window1:
+    services:
+      - app
+    command: "up"
+    command_options:
+      - ""
+  window3:
+    services:
+      - redis
+      - mongo
+    command: "up"
+    command_options:
+      - ""
+
+  window2:
+    services:
+      - app
+    command: "run"
+    command_options:
+      - "/bin/sh"
