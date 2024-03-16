@@ -149,8 +149,7 @@ func formatCommand(command string) string {
 
 func execCommand(command string) error {
 	// Create the tmux window with the specified name
-	// cmd := exec.Command(command)
-	cmd := exec.Command(command)
+	cmd := exec.Command("bash", "-c", command)
 	cmd.Stdout = os.Stdout
 	cmd.Stderr = os.Stderr
 	err := cmd.Run()
