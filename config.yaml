@@ -5,15 +5,14 @@ windows:
     command: "up"
     command_options:
       - ""
-  window3:
+  window2:
     services:
       - redis
       - mongo
     command: "up"
     command_options:
       - ""
-
-  window2:
+  window3:
     services:
       - app
     command: "run"
